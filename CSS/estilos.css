@@ -1,12 +1,10 @@
-/*GENERAL*/
-/*Aqui falta lo de la fuente, no se cual usar*/
-
+/* General (para móviles por defecto) */
 body {
     margin: 0px;
     padding: 0px;
 }
 
-/*MOVIL */
+/* Estilos del header */
 header {
     display: flex;
     flex-direction: column;
@@ -42,7 +40,6 @@ header h1 span {
     display: block;
 }
 
-/* Hamburguesa*/
 #menu-hamburguesa {
     background: none;
     border: none;
@@ -54,7 +51,7 @@ header h1 span {
     display: block;
 }
 
-#nav-menu {/* lo de la hamburguesa por defecto no sale */
+#nav-menu {
     display: none;
     width: 100%;
 }
@@ -95,9 +92,10 @@ header h1 span {
     color: #000;
 }
 
-/*TABLET*/
-@media (min-width: 768px) {
+/* Media Query solo para el header */
 
+/* Tablet */
+@media (min-width: 768px) {
     header {
         align-items: center;
         text-align: center;
@@ -139,56 +137,9 @@ header h1 span {
     header h1 {
         font-size: 1.5rem;
     }
-    /* codigo que no me daba pero que puede servir, quien sabe
-    header {
-        align-items: center;
-        text-align: center;
-        background-color: #000;
-    }
-
-    header nav ul {
-        display: flex;
-    }
-
-    header nav ul li {
-        width: 100%;    
-    }
-
-    #menu-toggle {
-        display: none; /* Ocultar hamburguesa en tablet */
-    /*}
-/*
-    #nav-menu {
-        display: flex !important;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #nav-menu ul {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /* Permite que bajen si no caben */
-       /* gap: 0.5rem;
-    }
-    
-    #nav-menu ul li {
-        width: auto; /* Que se adapten al contenido */
-    /*}
-    
-    #nav-menu ul li a {
-        display: block;
-        margin: 0 0.5rem; /* Márgenes más pequeños que en móvil */
-       /* padding: 0.5rem 0.75rem; /* Padding más compacto */
-       /* white-space: nowrap; /* Evita que se rompa el texto */
-   /* }
-
-    header h1 {
-        font-size: 1.5rem;
-    }*/
 }
 
-/*PC*/
+/* PC */
 @media (min-width: 1024px) {
     header {
         flex-direction: column;
@@ -200,8 +151,8 @@ header h1 span {
         width: 100%;
     }
 
-    .header-top h1{
-        font-size: 1.50rem;
+    .header-top h1 {
+        font-size: 1.5rem;
     }
 
     #nav-menu {
@@ -217,45 +168,76 @@ header h1 span {
         padding: 0.5rem 1rem;
         font-size: 1.25rem;
     }
-    
-    
-    
-    /*header {
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #000;
-    }
-
-    header nav {
-        width: auto;
-    }
-
-    header nav ul li {
-        width: auto;
-    }
-
-    header .header-top {
-        flex: 1;
-    }
-
-    #nav-menu {
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    #nav-menu ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 0.5rem;
-    }
-    
-    #nav-menu ul li {
-        width: auto;
-    }
-    
-    #nav-menu ul li a {
-        margin: 0 0.5rem;
-        padding: 0.5rem 1rem;
-    }*/
 }
+
+        /* ----pagina nosotros ---*/
+        .seccion {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        
+        .seccion h1 {
+            margin: 25px;
+            color: #4D006e;
+        }
+    
+        .seccion p {
+            margin: 0 0 16px;
+            color: #4D006e;
+        }
+    
+        .contenedor-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .imagen-item {
+            width: 22%;
+            text-align: center;
+        }
+    
+        .imagen-item img {
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .imagen-item h3 {
+            color: #131313;
+            margin-top: 10px;
+        }
+    
+        .imagen-item p {
+            color: #4D006e;
+            margin-top: 5px;
+        }
+    
+        .contenedor-video {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .contenedor-video iframe {
+            width: 100%;
+            height: 315px;
+            max-width: 560px;
+            border-radius: 10px;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .imagen-item {
+                width: 48%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .imagen-item {
+                width: 100%; 
+            }
+        }
+    
+       /* ----pagina nosotros ---*/
