@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/donacion.css">
     <link rel="icon" href="IMGS/logoPNG.png" type="image/png">
     <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/donaciones.js"></script>
 </head>
 <body>
     <header>
@@ -45,45 +46,45 @@
                     <form action="donaciones.html" class="frmDonaciones" method="get" id="frmDonaciones" novalidate>
                         <div>
                             <label for="txtMonto">Monto de donación:</label>
-                            <input type="number" id="txtMonto" name="txtMonto" required>
+                            <input type="number" id="txtMonto" name="txtMonto" placeholder="0.0L" required title="Cantidad que desea donar.">
                         </div>
                         <div>
                             <label for="txtNombre">Nombre:</label>
-                            <input type="text" id="txtNombre" name="txtNombre" required>
+                            <input type="text" id="txtNombre" name="txtNombre" required placeholder="Nombre" title="Nombre del donante">
                         </div>
                         <div>
                             <label for="txtApellido">Apellido:</label>
-                            <input type="text" id="txtApellido" name="txtApellido" required>
+                            <input type="text" id="txtApellido" name="txtApellido" required placeholder="Apellido" title="Apellido del donante">
                         </div>
                         <div>
                             <label for="txtCorreo">Correo Electrónico:</label>
-                            <input type="email" id="txtCorreo" name="txtCorreo" required>
+                            <input type="email" id="txtCorreo" name="txtCorreo" required placeholder="Correo electronico" title="Ingrese un correo electronico activo.">
                         </div>
                         <div>
                             <label for="btnTarjeta">Método de pago:</label>
-                            <button class="btnTarjeta" id="btnTarjeta">Tarjeta de Crédito/Débito</button>
+                            <button type="button" class="btnTarjeta" id="btnTarjeta" title="Seleccionar metodo de pago: Tarjeta de Credito/Debito">Tarjeta de Crédito/Débito</button>
                         </div>
-                        <section class="infoTarjeta">
+                        <section class="infoTarjeta" id="infoTarjeta">
                             <p>Ingrese los datos de su tarjeta:</p>
                             <div>
                                 <label for="txtNumero">Número de tarjeta</label>
-                                <input type="number" name="txtNumero" id="txtNumero" required>
+                                <input type="number" name="txtNumero" id="txtNumero" required placeholder="0000000000000000" title="Codigo de 16 digitos que aparece en el frente de la tarjeta.">
                             </div>
                             <div>
                                 <label for="txtFechaVencimiento">Fecha de Vencimiento</label>
-                                <input type="text" name="txtFechaVencimiento" id="txtFechaVencimiento" required>
+                                <input type="text" name="txtFechaVencimiento" id="txtFechaVencimiento" required placeholder="00/00" title="Fecha de vencimiento de la tarjeta.">
                             </div>
                             <div>
                                 <label for="txtCSV">Código de Seguridad</label>
-                                <input type="number" name="txtCSV" id="txtCSV" required>
+                                <input type="number" name="txtCSV" id="txtCSV" required placeholder="000" title="Numero de tres digitos en el reverso de la tarjeta.">
                             </div>
                             <div>
                                 <label for="txtNombreTitular">Nombre del Titular</label>
-                                <input type="text" name="txtNombreTitular" id="txtNombreTitular" required>
+                                <input type="text" name="txtNombreTitular" id="txtNombreTitular" required placeholder="Nombre Del Titular" title="Nombre que aparece en la tarjeta.">
                             </div>
                         </section>
                         <div class="centro">
-                            <button type="submit" class="btnDonar">Donar ahora</button>
+                            <button type="submit" class="btnDonar" title="Confirmar y enviar donacion.">Donar ahora</button>
                         </div>
                         
                     </form>
