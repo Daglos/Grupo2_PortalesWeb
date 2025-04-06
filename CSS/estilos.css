@@ -185,8 +185,8 @@ footer{
 
         /* ----pagina nosotros ---*/
         .seccion {
-            padding-left: 32px;
-            padding-right: 32px;
+            padding-left: 72px;
+            padding-right: 72px;
         }
         
         .seccion h1 {
@@ -196,7 +196,10 @@ footer{
     
         .seccion p {
             margin: 0 0 16px;
-            color: #4D006e;
+            color: #2a292a;
+            font-weight: 400;
+            line-height: 1.5;
+
         }
     
         .contenedor-imagenes {
@@ -218,7 +221,7 @@ footer{
         }
     
         .imagen-item h3 {
-            color: #131313;
+            color: #2a292a;
             margin-top: 10px;
         }
     
@@ -235,8 +238,8 @@ footer{
     
         .contenedor-video iframe {
             width: 100%;
-            height: 315px;
-            max-width: 560px;
+            height: 617px;
+            max-width: 1042px;
             border-radius: 10px;
         }
 
