@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/donacion.css">
+    <link rel="icon" href="IMGS/logoPNG.png" type="image/png">
+    <script src="JAVASCRIPT/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="IMGS/logoPNG.png" alt="Logo de Organización"> <!-- el jpg es otra opcion -->
+            <h1>
+                <span>Scout de</span>
+                <span>Honduras</span>
+            </h1>
+            <button id="menu-hamburguesa">☰</button><!-- ≡ A­­QUI NO SE SI SE PUEDA PONER UNA IMAGEN. se llama Triple Bar Symbol-->
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" title="Inicio">Inicio</a></li>
+                <li><a href="acercaNosotros.html" target="_blank" title="Acerca de Nosotros">Nosotros</a></li>
+                <li><a href="nuestrosProgramas.html" target="_blank" title="Nuestros Programas">Programas</a></li>
+                <li><a href="comoAyudar.html" title="Como Ayudar">Como Ayudar</a></li>
+                <li><a href="#ch4">Galería de Fotos</a></li>
+                <li><a href="#ch5">Blog</a></li>
+                <li><a href="#ch6">Eventos</a></li>
+                <li><a href="#ch7">Contactenos</a></li>
+                <li><a href="#ch9">Preguntas Frecuentes (FAQ)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="seccion">
+            <h1>Tu ayuda cambia vidas</h1>
+            <p>Tu donación ayudará a empoderar a los jóvenes Scouts de Honduras, brindándoles herramientas para desarrollar valores, 
+                liderazgo y habilidades esenciales para construir un futuro mejor. Cada contribución permite financiar programas educativos, 
+                actividades comunitarias y oportunidades para que los Scouts crezcan como ciudadanos responsables y solidarios.</p>
+                <section class="infoDonaciones">
+                    <h2>Haz tu donación</h2>
+                    <form action="donaciones.html" class="frmDonaciones" method="get" id="frmDonaciones" novalidate>
+                        <div>
+                            <label for="txtMonto">Monto de donación:</label>
+                            <input type="number" id="txtMonto" name="txtMonto" required>
+                        </div>
+                        <div>
+                            <label for="txtNombre">Nombre:</label>
+                            <input type="text" id="txtNombre" name="txtNombre" required>
+                        </div>
+                        <div>
+                            <label for="txtApellido">Apellido:</label>
+                            <input type="text" id="txtApellido" name="txtApellido" required>
+                        </div>
+                        <div>
+                            <label for="txtCorreo">Correo Electrónico:</label>
+                            <input type="email" id="txtCorreo" name="txtCorreo" required>
+                        </div>
+                        <div>
+                            <label for="btnTarjeta">Método de pago:</label>
+                            <button class="btnTarjeta" id="btnTarjeta">Tarjeta de Crédito/Débito</button>
+                        </div>
+                        <section class="infoTarjeta">
+                            <p>Ingrese los datos de su tarjeta:</p>
+                            <div>
+                                <label for="txtNumero">Número de tarjeta</label>
+                                <input type="number" name="txtNumero" id="txtNumero" required>
+                            </div>
+                            <div>
+                                <label for="txtFechaVencimiento">Fecha de Vencimiento</label>
+                                <input type="text" name="txtFechaVencimiento" id="txtFechaVencimiento" required>
+                            </div>
+                            <div>
+                                <label for="txtCSV">Código de Seguridad</label>
+                                <input type="number" name="txtCSV" id="txtCSV" required>
+                            </div>
+                            <div>
+                                <label for="txtNombreTitular">Nombre del Titular</label>
+                                <input type="text" name="txtNombreTitular" id="txtNombreTitular" required>
+                            </div>
+                        </section>
+                        <div class="centro">
+                            <button type="submit" class="btnDonar">Donar ahora</button>
+                        </div>
+                        
+                    </form>
+                </section>
+                
+            <section class="impact">
+                <h2>¿Por qué donar?</h2>
+                <p>Tu contribución nos ayuda a mejorar vidas mediante programas de educación, salud y bienestar.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Gracias por tu apoyo. <a href="#">Contáctanos</a> para más información.</p>
+    </footer>
+</body>
+</html>
