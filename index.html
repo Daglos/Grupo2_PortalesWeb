@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Prueba Commit</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
     <link rel="icon" href="IMGS/logoPNG.png" type="image/png">
     <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/inicio.js"></script>
 </head>
 <body>
     <header>
@@ -22,19 +24,105 @@
         </div>
         <nav id="nav-menu">
             <ul>
-                <li><a href="acercaNosotros.html" target="_blank" title="Acerca de Nosotros">Nosotros</a></li>
-                <li><a href="nuestrosProgramas.html" target="_blank" title="Nuestros Programas">Programas</a></li>
+                <li><a href="acercaNosotros.html"  title="Acerca de Nosotros">Nosotros</a></li>
+                <li><a href="nuestrosProgramas.html" title="Nuestros Programas">Programas</a></li>
                 <li><a href="comoAyudar.html" title="Como Ayudar">Cómo Ayudar</a></li>
                 <li><a href="galeria.html">Galería de Fotos</a></li>
                 <li><a href="#ch5">Blog</a></li>
                 <li><a href="#ch6">Eventos</a></li>
                 <li><a href="#ch7">Contactenos</a></li>
                 <li><a href="donaciones.html" title="Donaciones">Donaciones</a></li>
-                <li><a href="#ch9">Preguntas Frecuentes (FAQ)</a></li>
+                <li><a href="#ch9">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <section class="carrusel">
+            <div class="track">
+                <!-- HERO PANEL 1 -->
+                <section class="hero-panel">
+                        <img src="IMGS/hero1.jpg" alt="Imagen del Hero Panel">
+                    <div>
+                        <h2>Scouts</h2>
+                        <p>Inspirados en los valores y principios establecidos por nuestro fundador, Sir Lord Robert S. Baden Powell</p>
+                    </div>
+                </section>
+
+                <!-- HERO PANEL 2 -->
+                <section class="hero-panel">
+                        <img src="IMGS/hero2.jpg" alt="Imagen del Hero Panel">
+                    <div>
+                        <p>Unidos por el compañerismo, el servicio y el espíritu de aventura</p>
+                    </div>
+                </section>
+
+                <!-- HERO PANEL 3 -->
+                <section class="hero-panel">
+                        <img src="IMGS/hero3.jpg" alt="Hero Panel Picture">
+                    <div>
+                        <p>Aquí crecemos con alegría, aprendemos haciendo y servimos con el corazón</p>
+                    </div>
+                </section>
+            </div>
+        
+            <!-- Indicadores -->
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        
+        </section>
+
+        <div class="noticias">
+            <h2>Noticias Recientes</h2>
+        </div>
+
+        <!-- TARJETAS NOTICIAS -->
+        <div class="tarjetas">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta tarjeta1">
+                <picture>
+                    <source srcset="IMGS/1PC.jpg" media="(min-width:1025px)">
+                    <source srcset="IMGS/1TB.jpg" media="(min-width:768px)">
+                    <img src="IMGS/1.jpg" alt="Imagen de Noticia 1">
+                </picture>
+                <div class="contenido">
+                    <p>El Programa de Jóvenes, a través de la Comisión de Mundo Mejor y la iniciativa Mensajeros de la Paz,
+                        hace entrega de los símbolos representativos a los nuevos Embajadores de la Paz.
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta tarjeta2">
+                <picture>
+                    <source srcset="IMGS/2PC.jpg" media="(min-width:1025px)">
+                    <source srcset="IMGS/2TB.jpg" media="(min-width:768px)">
+                    <img src="IMGS/2.jpg" alt="Imagen de Noticia 2">
+                </picture>
+                <div class="contenido">
+                    <p>Así celebraron el Natalicio del Fundador en el Distrito 5 de Tegucigalpa.</p>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta tarjeta3">
+                <picture>
+                    <source srcset="IMGS/3PC.jpg" media="(min-width:1025px)">
+                    <source srcset="IMGS/3TB.jpg" media="(min-width:768px)">
+                    <img src="IMGS/3.jpg" alt="Imagen de Noticia 3">
+                </picture>
+                <div class="contenido">
+                    <p>Taller de Animación Territorial. Un espacio para fortalecer el "Apoyo y sostén" a los grupos y 
+                        unidades scout en la aplicación del Programa de Jóvenes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
 </body>
 </html>
