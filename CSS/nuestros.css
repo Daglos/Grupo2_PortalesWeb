@@ -11,7 +11,7 @@ h2 {
 }
 
 .programa {
-    background-color: white;
+    background-color: #fff;
     margin-bottom: 1.5rem;
     padding: 2rem;
     border-left: 5px solid #4b0f6d;
@@ -20,7 +20,7 @@ h2 {
     position: relative;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #fff;
     padding: 2rem;
     border-radius: 10px;
     overflow: hidden;
