@@ -100,6 +100,15 @@ main {
     list-style-type: disc;
 }
 
+.resaltado {
+    background-color: #a2faa3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #5fb960; 
+}
+
+
 footer {
     background-color: #4b0f6d;
     color: white;
