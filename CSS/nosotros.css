@@ -129,6 +129,19 @@
     height: 617px;
     max-width: 1042px;
     border-radius: 10px;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-video iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor-video iframe {
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 768px) {
