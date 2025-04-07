@@ -10,8 +10,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const fondoBorroso = document.getElementById("fondoBorroso");
     const infoVoluntario = document.getElementById("infoVoluntario");
     const seccion = document.getElementById("seccion");
+    const btnCompartir = document.getElementById("btnCompartir");
 
+    const pageURL = window.location.href; // Obtiene la URL actual de la página
+    const shareText = "¡Mira este contenido interesante!";
     
+
+    btnCompartir.addEventListener("click", () => {
+        const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageURL)}`;
+        window.open(facebookURL, '_blank');
+    });
+
+
 
     btnMostrar.addEventListener("click", () => {
         fondoBorroso.style.display = "flex";
