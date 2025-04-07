@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/comoAyudar.css">
     <link rel="icon" href="IMGS/logoPNG.png" type="image/png">
     <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/comoAyudar.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,8 @@
         </nav>
     </header>
     <main>
-        <section class="seccion">
+        <section class="seccion" id="seccion">
+            <div class="fondoBorroso" id="fondoBorroso"></div>
             <h1>¡Ayuda a los Scouts de Honduras!</h1>
         <section>
             <p>Los Scouts de Honduras forman líderes y ciudadanos responsables a través del servicio y la aventura.</p>
@@ -46,7 +48,7 @@
                     <div class="tituloCarta">
                         Donando
                     </div>
-                    <img src="https://picsum.photos/id/140/300/200" alt="tarjeta imagen">
+                    <img src="IMGS/imgCartaDonar.jpg" alt="Imagen tarjeta">
                     <div class="cartaBody">
                         Gracias a personas como tú, podemos seguir formando líderes comprometidos, solidarios y 
                         respetuosos con el medio ambiente. Cada aporte, grande o pequeño, nos ayuda a brindar más 
@@ -61,7 +63,7 @@
                     <div class="tituloCarta">
                         Siendo Voluntario
                     </div>
-                    <img src="https://picsum.photos/id/140/300/200" alt="tarjeta imagen">
+                    <img src="IMGS/imgCartaVoluntario.jpg" alt="tarjeta imagen">
                     <div class="cartaBody">
                         ¿Quieres marcar la diferencia en la vida de niños y jóvenes?<br>
                         Conviértete en voluntario y forma parte del movimiento Scout en Honduras. No necesitas tener 
@@ -70,14 +72,14 @@
                         mientras inspiras a las futuras generaciones.
                     </div>
                     <div class="cartaFooter">
-                        <button>Convertirse en Voluntario</button>
+                        <button id="btnMostrarFrm" type="button">Convertirse en Voluntario</button>
                     </div>
                 </div>
                 <div class="carta">
                     <div class="tituloCarta">
                         Compartiendo Nuestra Causa
                     </div>
-                    <img src="https://picsum.photos/id/140/300/200" alt="tarjeta imagen">
+                    <img src="IMGS/imgCartaCompartir.jpg" alt="tarjeta imagen">
                     <div class="cartaBody">
                         ¿No puedes donar o ser voluntario en este momento? ¡No importa! También puedes ayudarnos compartiendo nuestro mensaje.
                         Cada vez que hablas de Scouts Honduras, inspiras a otros a sumarse, a creer en un mundo mejor y a apoyar la formación 
@@ -91,12 +93,52 @@
                 </div>
             </section>
         </section>
+        
+            
         <section>
             <h2>Tu impacto</h2>
             <p>Gracias a tu apoyo, hemos llevado educación y desarrollo a cientos de jóvenes en Honduras.</p>
         </section>
         </section>
-        
+        <div class="infoVoluntario" id="infoVoluntario">
+            <form id="frmVoluntarios" class="frmVoluntarios" action="comoAyudar.html" method="get" novalidate>
+                <button class="btnCerrar" id="btnCerrar" type="button">Cerrar</button>
+                <h2>Formulario para Voluntarios - Scouts de Honduras</h2>
+                <div id="divNombre">
+                    <label for="txtNombre">Nombre Completo:</label>
+                    <input class="inputV altura" type="text" id="txtNombre" name="txtNombre" required>
+                </div>
+                
+                <div id="divFechaNacimiento">
+                    <label for="txtFechaNacimiento">Fecha de Nacimiento:</label>
+                    <input class="inputV altura" type="date" id="txtFechaNacimiento" name="txtFechaNacimiento" required>
+                </div>
+                
+                <div id="divCiudad">
+                    <label for="txtCiudad">Ciudad:</label>
+                    <input class="inputV  altura" type="text" id="txtCiudad" name="txtCiudad" required>
+                </div>
+                
+                <div id="divMotivacion">
+                    <label for="txtMotivacion">¿Por qué deseas ser voluntario?</label>
+                    <textarea class="inputV" id="txtMotivacion" name="txtMotivacion" rows="4" required></textarea>
+                </div>
+                
+                <div id="divDisponibilidad">
+                    <label for="txtDisponibilidad">Disponibilidad:</label>
+                    <select class="inputV  altura" id="txtDisponibilidad" name="txtDisponibilidad">
+                        <option value="Diaria">Diaria</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Mensual">Mensual</option>
+                    </select>
+                </div>
+                
+                <div class="btnVoluntario">
+                    <button type="submit">Enviar</button>
+                </div>
+                
+            </form>
+        </div>
     </main>
 
         

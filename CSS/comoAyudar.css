@@ -96,3 +96,105 @@
 .carta:hover{
     transform: scale(1.03);
 }
+
+.fondoBorroso {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1000;
+}
+/* Estilo del formulario modal */
+.infoVoluntario{
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    background-color: #b5d6c8;
+}
+
+.frmVoluntarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0px;
+    
+}
+
+.frmVoluntarios div{
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 15px 0px;
+}
+
+.frmVoluntarios label{
+    font-size: 0.8rem;
+    width: 30%;
+    
+}
+
+.frmVoluntarios .altura{
+    height: 1.5rem;
+}
+
+.frmVoluntarios .inputV{
+    border-radius: 9px;
+    width: 60%;
+    border: 1px solid #4D006e;
+}
+
+.frmVoluntarios .btnVoluntario{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.frmVoluntarios button{
+    background-color: #4d006e51;
+    height: 2rem;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.frmVoluntarios .btnCerrar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+form div div.error{
+    color: red;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+form div input.error{
+    border-color: red;
+    outline-color: red;
+}
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
