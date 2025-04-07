@@ -28,18 +28,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     });
 
+    txtCSV.addEventListener("input", function(e){
+        let valor = txtCSV.value;
+        txtCSV.value = valor.slice(0, 3);
+    })
+
+    txtNumero.addEventListener("input", function(e){
+        let valor = txtNumero.value;
+        txtNumero.value = valor.slice(0, 16);
+    });
+
     txtFechaVencimiento.addEventListener("input", function(event) {
         let valor = txtFechaVencimiento.value;
 
-        // Eliminar caracteres no numéricos para evitar problemas
         valor = valor.replace(/\D/g, '');
 
-            // Agregar automáticamente la pleca (/) después de los primeros dos dígitos
         if (valor.length > 2) {
             valor = valor.slice(0, 2) + '/' + valor.slice(2);
         }
 
-            // Limitar el valor a 5 caracteres (MM/YY)
         txtFechaVencimiento.value = valor.slice(0, 5);
     });
 
@@ -125,7 +132,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
         if (!regexNumero.test(numeroTarjeta)){
-            error["Numero"]="El numero ingresado no debe ser mayor o menor a 16 digitos.";
+            error["Numero"]="El numero no puede estar vacio o menos de 16 digitos.";
             hayErrores=true;
         }
 
@@ -137,11 +144,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
             hayErrores=true;
         }
 
-            // Verificar si la fecha no está vencida
         const [mes, ano] = fechaVencimiento.split("/").map(num => parseInt(num, 10));
         const fechaActual = new Date();
-        const mesActual = fechaActual.getMonth() + 1; // Enero es 0, por eso sumamos 1
-        const anoActual = fechaActual.getFullYear() % 100; // Tomar solo los últimos dos dígitos del año
+        const mesActual = fechaActual.getMonth() + 1;
+        const anoActual = fechaActual.getFullYear() % 100;
 
         if (ano < anoActual || (ano === anoActual && mes < mesActual)) {
             error["FechaVencimiento"] = "La tarjeta está vencida.";
