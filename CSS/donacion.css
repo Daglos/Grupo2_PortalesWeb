@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    
-}
 
 h1{
     font-size: 4rem;
@@ -63,6 +60,17 @@ form div label{
     width: 30%;
 }
 
+form div div.error{
+    color: red;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+form div input.error{
+    border-color: red;
+    outline-color: red;
+}
+
 form div input{
     font-size: 1rem;
     padding: 0.25rem 0.5rem;
@@ -96,6 +104,7 @@ form div select{
 }
 
 .btnDonar{
+    display: none;
     width: 8rem;
     height: 2rem;
     background-color: #4D006e;
