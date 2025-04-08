@@ -54,3 +54,8 @@
       transform: scale(1.03);
      
   }
+
+  main{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
