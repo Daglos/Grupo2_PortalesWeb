@@ -1,6 +1,9 @@
 body {
     margin: 0;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 7d97b6832b34e0f72c2643de01fe6ff924983831
   }
 
   .background {
@@ -41,11 +44,16 @@ body {
 
   .contact-info {
     color: #333;
+<<<<<<< HEAD
     font-size: 0.7rem;
+=======
+    font-size: 0.8rem;
+>>>>>>> 7d97b6832b34e0f72c2643de01fe6ff924983831
     line-height: 2;
     padding: 2rem;
     text-align: center;
     margin-bottom: 20px;
+    transform: translateY(10px); 
   }
 
   .contact-form {
