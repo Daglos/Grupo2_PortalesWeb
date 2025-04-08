@@ -11,15 +11,38 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const infoVoluntario = document.getElementById("infoVoluntario");
     const seccion = document.getElementById("seccion");
     const btnCompartir = document.getElementById("btnCompartir");
+    const btnFacebook=document.getElementById("btnFacebook");
+    const btnTwitter=document.getElementById("btnTwitter");
+    const redes=document.getElementById("redes");
+    const btnCerrarRedes=document.getElementById("btnCerrarRedes");
 
-    const pageURL = window.location.href; // Obtiene la URL actual de la página
-    const shareText = "¡Mira este contenido interesante!";
-    
+    const pageURL = "https://daglos.github.io/Grupo2_PortalesWeb/"
+    const shareText = "Sé parte de algo más grande con los Scouts de Honduras. ¡Únete al movimiento y transforma vidas!";
 
-    btnCompartir.addEventListener("click", () => {
-        const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageURL)}`;
+;
+    btnCompartir.addEventListener("click", () =>{
+        fondoBorroso.style.display = "flex";
+        redes.style.display = "flex";
+        seccion.classList.add("blur");
+    });
+
+    btnCerrarRedes.addEventListener("click", () =>{
+        fondoBorroso.style.display = "none";
+        redes.style.display = "none";
+        seccion.classList.remove("blur");
+    });
+
+    btnFacebook.addEventListener("click", () => {
+        const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${(pageURL)}`;
         window.open(facebookURL, '_blank');
     });
+
+    btnTwitter.addEventListener("click", () => {
+        const twitterURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${(pageURL)}`;
+        window.open(twitterURL, '_blank');
+    });
+
+
 
 
 

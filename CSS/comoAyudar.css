@@ -1,6 +1,4 @@
-.seccion h2{
-    color: #4D006e;
-}
+
 
 .seccion{
     display: flex;
@@ -26,14 +24,14 @@
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
-    background-color: #4d006e3c;
+    background-color: #b5d6c8;
 }
 
 .carta .tituloCarta{
     padding: 8px;
     text-align: center;
     font-weight: bold;
-    color: #4D006e;
+    color: #040404;
 }
 
 .carta img {
@@ -59,20 +57,18 @@
 }
 
 .carta .cartaFooter button {
-    background-color: darkcyan;
+    background-color: #196343;
     color: #fff;
     width: 100%;
     border: 1px solid darkslateblue;
     padding: 0.85rem 0.75rem;
     cursor: pointer; 
     border-radius: 5px;
-    font-size: 1rem;
-    background-color: #4d006e7b; 
+    font-size: 1rem; 
 }
 
 .carta .cartaFooter a{
     text-decoration: none;
-    background-color: darkcyan;
     color: #fff;
     width: 100%;
     border: 1px solid darkslateblue;
@@ -82,15 +78,15 @@
     text-align: center;
     font-size: 1rem;
     font-weight: lighter;
-    background-color: #4d006e7b;
+    background-color: #196343;
 }
 
 .carta .cartaFooter button:hover {
-    background-color: #442d4f1d;
+    background-color: #19634396;
 }
 
 .carta .cartaFooter a:hover {
-    background-color: #442d4f1d;
+    background-color: #19634396;
 }
 
 .carta:hover{
@@ -107,7 +103,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     z-index: 1000;
 }
-/* Estilo del formulario modal */
+
 .infoVoluntario{
     display: none;
     position: fixed;
@@ -162,6 +158,7 @@
 
 .frmVoluntarios .btnVoluntario{
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 15px;
 }
@@ -173,13 +170,21 @@
     width: 50%;
 }
 
+.frmVoluntarios .DerechaX{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .frmVoluntarios .btnCerrar {
     background-color: red;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 2px;
+    width: 2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 
@@ -194,7 +199,56 @@ form div input.error{
     outline-color: red;
 }
 
+
 .blur {
     filter: blur(5px);
     pointer-events: none;
+}
+
+.redes{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    background-color: #b5d6c8;
+    gap: 1rem;
+}
+
+.redes .DerechaR{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.redes .btnCerrar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2px;
+    width: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.redes button{
+    background-color: #b5d6c8;
+    border: 0px;
+    padding: 5px;
+}
+
+.redes button:hover{
+    border: 3ox solid #1a5e42f5;
+    background-color: #343f3af5;
 }
