@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Por favor, Por favor escriba el correo.");
         }
 
-        if (!regexIsEMail.test(txtCorreo.value) && (hasErrors == false)){
+        if (!regexIsEMail.test(txtcorreo.value) && (hasErrors == false)){
             hasErrors = true;
-            txtCorreo.style.border = "2px solid red";
+            txtcorreo.style.border = "2px solid red";
             alert("El correo electrónico no cumple con el formato apropiado: mi.correo@dominio.region");
         }
 
