@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0px 15px 0px 15px;
 }
 
 .contenedorCartas {
@@ -16,7 +17,7 @@
 
 .carta {
     overflow: hidden;
-    width: 320px;
+    width: 290px;
     height: 550px;
     border: 1px solid #4D006e; 
     border-radius: 9px;
@@ -295,5 +296,9 @@ form div input.error{
     .redes{
         max-width: 500px;
         width: 100%;
+    }
+
+    .carta{
+        width: 320px;
     }
 }
