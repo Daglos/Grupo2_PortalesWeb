@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/contactenos.css">
     <link rel="icon" href="IMGS/logoPNG.png" type="image/png">
     <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/contactenos.js"></script>
 </head>
 <body>
     <header>
@@ -46,13 +47,13 @@
                   <div>📍 Colonia Ruben Dario, 2da Avenida 4ta Calle Tegucigalpa, M.D.C.</div>
                 </div>
         
-                <div class="contact-form">
+                <form id="contact-form" class="contact-form" method="get" novalidate>
                   <h2>¿Desea contactarnos?</h2>
-                  <input type="text" placeholder="Nombre completo" />
-                  <input type="email" placeholder="Correo electrónico" />
-                  <input type="tel" placeholder="Teléfono" />
-                  <button>Enviar</button>
-                </div>
+                  <input type="text" placeholder="Nombre completo" name="txtnombre" id="txtnombre"/>
+                  <input type="email" placeholder="Correo electrónico" name="txtcorreo" id="txtcorreo"/>
+                  <input type="tel" placeholder="Teléfono" name="txttelefono" id="txttelefono"/>
+                  <button type="submit" class="btnContacto" id="btnContacto">Enviar</button>
+                </form>
               </div>
             </div>
             <div class="stripe stripe3"></div>
