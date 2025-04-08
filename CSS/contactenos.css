@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .background {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .stripe {
+    flex: 1;
+  }
+
+  .stripe1 {
+    background-color: #e0e0e0;
+  }
+
+  .stripe2 {
+    background-color: #4d006e3c;
+    position: relative;
+  }
+
+  .stripe3 {
+    background-color: #e0e0e0;
+  }
+
+  .content {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-info {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 2;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    background: white;
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 50%;
+    transform: translateY(-10px); 
+  }
+
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-form input {
+    width: 95%;
+    padding: 2%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #005fa3;
+  }
+
+  @media (min-width: 500px) {
+    .contact-info {
+      font-size: 1.1rem;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .contact-info {
+      text-align: left;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      transform: translateY(70px); 
+    }
+
+    .contact-form {
+      margin: 0 auto;
+      transform: translateY(50px); 
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .contact-info {
+      text-align: left;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      /* transform: translateY(120px);  */
+    }
+
+    .contact-form {
+      margin: 0 auto;
+      transform: translateY(50px); 
+    }
+  }
