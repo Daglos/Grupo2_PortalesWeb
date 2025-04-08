@@ -10,18 +10,17 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+
 .programa {
     background-color: #fff;
     margin-bottom: 1.5rem;
     padding: 2rem;
     border-left: 5px solid #4b0f6d;
-    border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 2rem;
     border-radius: 10px;
     overflow: hidden;
     min-height: 200px;
@@ -39,4 +38,3 @@ h2 {
     position: relative;
     z-index: 1;
 }
-
