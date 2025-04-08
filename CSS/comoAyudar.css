@@ -112,8 +112,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    max-width: 400px;
+    padding: 5px;
+    max-width: 250px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -124,7 +124,7 @@
 .frmVoluntarios{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: 1rem;
     width: 80%;
     gap: 0px;
     
@@ -137,12 +137,14 @@
     gap: 0.5rem;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px 0px 15px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 5px 0px;
 }
 
 .frmVoluntarios label{
     font-size: 0.8rem;
-    width: 30%;
+    width: 100%;
     
 }
 
@@ -152,7 +154,7 @@
 
 .frmVoluntarios .inputV{
     border-radius: 9px;
-    width: 60%;
+    width: 100%;
     border: 1px solid #4D006e;
 }
 
@@ -214,7 +216,7 @@ form div input.error{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    max-width: 400px;
+    max-width: 250px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -251,4 +253,47 @@ form div input.error{
 .redes button:hover{
     border: 3ox solid #1a5e42f5;
     background-color: #343f3af5;
+}
+
+@media(min-width: 1024px){
+    .infoVoluntario{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .frmVoluntarios label{
+        width: 30%;
+        
+    }
+
+    .frmVoluntarios .inputV{
+        width: 60%;
+    }
+
+    .redes{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px){
+    .infoVoluntario{
+        padding: 15px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .frmVoluntarios label{
+        width: 30%;
+        
+    }
+
+    .frmVoluntarios .inputV{
+        width: 60%;
+    }
+
+    .redes{
+        max-width: 500px;
+        width: 100%;
+    }
 }

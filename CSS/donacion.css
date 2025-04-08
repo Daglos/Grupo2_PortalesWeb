@@ -1,9 +1,5 @@
 
 
-*{
-    box-sizing: border-box;
-}
-
 
 h1{
     font-size: 4rem;
@@ -14,9 +10,8 @@ h1{
 .seccion{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    padding: 15px;
 }
 
 .seccion h2{
@@ -29,14 +24,19 @@ p{
 }
 
 .infoDonaciones {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #4D006e;
-    padding: 2rem;
+    padding: 3%;
     background-color: #b5d6c8;
     box-shadow: 1px 1px 3px #111;
     width: 100%;
-    max-width: 720px;
+    max-width: 80vw;
     border-radius: 40px;
 }
+
+
+
 
 form{
     display: flex;
@@ -48,14 +48,15 @@ form div{
     display: flex;
     flex: 1 1 100%;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
 }
 
 form div label{
     font-weight: bold;
-    width: 30%;
+    width: 100%;
+
 }
 
 form div div.error{
@@ -73,7 +74,7 @@ form div input{
     font-size: 1rem;
     padding: 0.25rem 0.5rem;
     border: 1px solid #ccc;
-    width: 60%;
+    width: 100%;
     border: 1px solid #4D006e;
     border-radius: 9px;
 }
@@ -122,5 +123,32 @@ form button:hover{
 }
 
 
+@media (min-width:1024px){
+    .infoDonaciones{
+        max-width: 720px;
+        width: 100%;
+    }
 
+    form div label{
+        width: 30%;
+    }
 
+    form div input{
+        width: 60%;
+    }
+}
+
+@media (min-width:768px){
+    .infoDonaciones{
+        max-width: 650px;
+        width: 100%;
+    }
+
+    form div label{
+        width: 30%;
+    }
+
+    form div input{
+        width: 60%;
+    }
+}
