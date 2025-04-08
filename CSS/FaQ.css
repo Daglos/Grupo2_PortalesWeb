@@ -1,7 +1,6 @@
-
 .seccion {
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 32px;
 }
 
@@ -72,4 +71,12 @@
 /* Cuando el botón está activo se rota la flecha */
 .acordeon-boton.activo::after {
     transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+    .seccion {
+        padding-left: 72px;
+        padding-right: 72px;
+        padding-bottom: 32px;
+    }
 }
