@@ -2,9 +2,7 @@
 Richard Bayardo Galo Amador 
 Rick282003
 
-080199910370
-Carlos Daniel Galo Lagos  
-Daglos
+080199910370 Carlos Daniel Galo Lagos  Daglos
 
 1502200500450
 Emely Maria Ramirez Villalta 
